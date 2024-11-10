@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetization Dashboard</title>
+    <link rel="stylesheet" href="../styles/MonetizationDashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="metric">Revenue: ₹5000</div>
+            <div class="metric">Followers: 10k</div>
+            <div class="metric">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post">Create Post</button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+
+    <main>
+        <section id="overview">
+            <h2>Earnings Overview</h2>
+            <div class="overview-stats">
+                <div class="stat">
+                    <h3>Daily Earnings</h3>
+                    <p id="daily-earnings">₹1500</p>
+                </div>
+                <div class="stat">
+                    <h3>Weekly Earnings</h3>
+                    <p id="weekly-earnings">₹10,500</p>
+                </div>
+                <div class="stat">
+                    <h3>Monthly Earnings</h3>
+                    <p id="monthly-earnings">₹45,000</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="affiliate-marketing">
+            <h2>Affiliate Marketing</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Clicks</h3>
+                    <p id="affiliate-clicks">1,200</p>
+                </div>
+                <div class="stat">
+                    <h3>Commissions</h3>
+                    <p id="affiliate-commissions">₹3,000</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="fan-subscriptions">
+            <h2>Fan Subscriptions</h2>
+            <div class="subscription-tier">
+                <h3>Tier 1</h3>
+                <p>50 Subscribers</p>
+                <p>₹5,000</p>
+            </div>
+            <div class="subscription-tier">
+                <h3>Tier 2</h3>
+                <p>20 Subscribers</p>
+                <p>₹2,500</p>
+            </div>
+            <div class="subscription-tier">
+                <h3>Tier 3</h3>
+                <p>10 Subscribers</p>
+                <p>₹1,000</p>
+            </div>
+        </section>
+    
+        <section id="live-donations">
+            <h2>Live Stream Donations</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Super Chats</h3>
+                    <p id="super-chats">₹2,500</p>
+                </div>
+                <div class="stat">
+                    <h3>Donations</h3>
+                    <p id="donations">₹1,000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/scripts/MonetizationDashboard.js"></script>
+</body>
+</html>

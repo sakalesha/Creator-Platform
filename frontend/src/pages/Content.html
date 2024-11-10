@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Dashboard</title>
+  <link rel="stylesheet" href="../styles/Content.css"> <!-- Link to external CSS for styles -->
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="metric">Revenue: ₹5000</div>
+            <div class="metric">Followers: 10k</div>
+            <div class="metric">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post">Create Post</button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+      <!-- Content Overview Section -->
+      <section id="overview">
+        <h2>Content Overview</h2>
+        <div class="content-summary">
+          <div class="card">
+            <h3>Published</h3>
+            <p>50 posts</p>
+          </div>
+          <div class="card">
+            <h3>Drafts</h3>
+            <p>12 drafts</p>
+          </div>
+          <div class="card">
+            <h3>Scheduled</h3>
+            <p>5 posts scheduled</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Creation Section -->
+      <section id="editor">
+        <h2>Create New Content</h2>
+        <textarea placeholder="Start writing your content here..."></textarea>
+        <button>Publish</button>
+      </section>
+
+      <!-- Content Analytics Section -->
+      <section id="analytics">
+        <h2>Content Analytics</h2>
+        <div class="analytics-summary">
+          <div class="card">
+            <h3>Total Views</h3>
+            <p>10,000 views</p>
+          </div>
+          <div class="card">
+            <h3>Engagement Rate</h3>
+            <p>75% engagement</p>
+          </div>
+          <div class="card">
+            <h3>Top Performing Content</h3>
+            <p>“How to Grow Your Audience” article</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Management Section -->
+      <section id="categories">
+        <h2>Category Management</h2>
+        <div class="category-actions">
+          <input type="text" placeholder="Add new category" />
+          <button>Add Category</button>
+        </div>
+        <ul class="category-list">
+          <li>Technology</li>
+          <li>Health & Wellness</li>
+          <li>Business</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="/scripts/Content.js"></script>
+</body>
+</html>

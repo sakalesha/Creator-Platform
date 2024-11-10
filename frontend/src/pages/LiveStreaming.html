@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Live Streaming</title>
+    <link rel="stylesheet" href="../styles/LiveStreaming.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="metric">Revenue: ₹5000</div>
+            <div class="metric">Followers: 10k</div>
+            <div class="metric">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post">Create Post</button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+
+    <!-- Search Bar -->
+    <input type="text" id="search" placeholder="Search past streams or content..." />
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Analytics Section -->
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <div class="graphs">
+                <div class="graph" id="engagement-trends">Engagement Trends Graph</div>
+                <div class="graph" id="revenue-breakdown">Revenue Breakdown</div>
+            </div>
+        </section>
+
+        <!-- Content Overview Section -->
+        <section id="content-overview">
+            <h2>Content Overview</h2>
+            <div class="upcoming-posts">
+                <h3>Upcoming Posts</h3>
+            </div>
+            <div class="current-live-stream">
+                <h3>Current Live Stream</h3>
+            </div>
+            <div class="recent-performance">
+                <h3>Recent Content Performance</h3>
+            </div>
+        </section>
+
+        <!-- Pre-Stream Setup -->
+        <section id="stream-setup">
+            <h2>Pre-Stream Setup</h2>
+            <input type="text" placeholder="Stream Title" id="stream-title">
+            <textarea placeholder="Stream Description" id="stream-description"></textarea>
+            <label for="monetization">Enable Monetization</label>
+            <input type="checkbox" id="monetization">
+            <button id="schedule-stream">Schedule Stream</button>
+        </section>
+
+        <!-- Live Chat -->
+        <section id="live-chat">
+            <h3>Live Chat</h3>
+            <div class="chat-feed" id="chat-feed"></div>
+            <input type="text" id="chat-message" placeholder="Send a message...">
+            <button id="send-chat">Send</button>
+            <button id="donate">Donate</button>
+            <button id="super-chat">Super Chat</button>
+        </section>
+
+        <!-- Stream Controls -->
+        <section id="stream-controls">
+            <h3>Stream Controls</h3>
+            <button id="start-stream">Start Stream</button>
+            <button id="end-stream">End Stream</button>
+            <button id="mute-audio">Mute Audio</button>
+            <button id="mute-video">Mute Video</button>
+            <label for="quality">Stream Quality:</label>
+            <select id="quality">
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+            </select>
+        </section>
+    </main>
+
+    <script src="/scripts/LiveStreaming.js"></script>
+</body>
+</html>

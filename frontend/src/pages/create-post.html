@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="../styles/create-post.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="revenue">Revenue: ₹5000</div>
+            <div class="followers">Followers: 10k</div>
+            <div class="liveStreams">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post">Create Post</button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main>
+        <h1>Create New Post</h1>
+
+        <form id="create-post-form">
+            <label for="title">Post Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter post title" required>
+
+            <label for="content">Content</label>
+            <textarea id="content" name="content" placeholder="Write your post content here..." rows="6" required></textarea>
+
+            <label for="tags">Tags</label>
+            <input type="text" id="tags" name="tags" placeholder="Add tags (comma separated)" required>
+
+            <label for="media">Upload Media</label>
+            <input type="file" id="media" name="media" accept="image/*,video/*">
+
+            <div class="button-container">
+                <button type="submit" id="publish-button">Publish Post</button>
+                <button type="button" id="save-draft-button">Save as Draft</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Creator Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="/scripts/create-post.js"></script>
+</body>
+</html>

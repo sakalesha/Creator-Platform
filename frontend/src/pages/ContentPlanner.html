@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Planner</title>
+    <link rel="stylesheet" href="../styles/ContentPlanner.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="metric">Revenue: ₹5000</div>
+            <div class="metric">Followers: 10k</div>
+            <div class="metric">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post">Create Post</button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+    
+    <main>
+        <div class="filters">
+            <label for="platform">Platform:</label>
+            <select id="platform">
+                <option value="all">All</option>
+                <option value="youtube">YouTube</option>
+                <option value="instagram">Instagram</option>
+            </select>
+    
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="all">All</option>
+                <option value="scheduled">Scheduled</option>
+                <option value="draft">Draft</option>
+                <option value="published">Published</option>
+            </select>
+        </div>
+    
+        <div class="calendar">
+            <div class="calendar-header">
+                <span>Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+            </div>
+    
+            <div class="calendar-grid">
+                <!-- Dynamically populated days -->
+            </div>
+        </div>
+    
+        <div class="content-card-container">
+            <!-- Dynamically populated content cards will appear here -->
+        </div>
+    </main>
+
+    <script src="/scripts/ContentPlanner.js"></script>
+</body>
+</html>

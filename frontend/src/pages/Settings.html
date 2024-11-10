@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="../styles/Settings.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="metric">Revenue: ₹5000</div>
+            <div class="metric">Followers: 10k</div>
+            <div class="metric">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post">Create Post</button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+    
+    <div class="settings-container">
+        <h2>Settings</h2>
+        
+        <!-- Profile Settings -->
+        <section class="settings-section">
+            <h3>Profile</h3>
+            <div>
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture">
+                <button class="upload-btn">Upload</button>
+            </div>
+            <form class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="John Doe">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="john.doe@example.com">
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <!-- Notification Settings -->
+        <section class="settings-section">
+            <h3>Notifications</h3>
+            <label><input type="checkbox" id="email-notifications"> Email Notifications</label>
+            <label><input type="checkbox" id="push-notifications"> Push Notifications</label>
+            <label><input type="checkbox" id="sms-notifications"> SMS Notifications</label>
+        </section>
+
+        <!-- Security Settings -->
+        <section class="settings-section">
+            <h3>Security</h3>
+            <button id="enable-2fa">Enable Two-Factor Authentication</button>
+            <button id="view-login-history">View Login History</button>
+        </section>
+
+        <!-- Appearance Settings -->
+        <section class="settings-section">
+            <h3>Appearance</h3>
+            <button id="toggle-theme">Toggle Dark Mode</button>
+        </section>
+        
+        <!-- Help Section -->
+        <section class="settings-section">
+            <h3>Help</h3>
+            <button id="faq-btn">FAQ</button>
+            <button id="contact-support">Contact Support</button>
+        </section>
+    </div>
+
+    <script src="/scripts/Settings.js"></script>
+</body>
+</html>

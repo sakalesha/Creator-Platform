@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./Content.html">Content</a></li>
+                <li><a href="./MonetizationDashboard.html">Monetization</a></li>
+                <li><a href="./Settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="../assets/profile-pic.jpg" alt="User Profile">
+            <span id="greeting">Good Morning, Creator Name!</span>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="quick-metrics">
+            <div class="revenue">Revenue: ₹5000</div>
+            <div class="followers">Followers: 10k</div>
+            <div class="liveStreams">Live Streams: 2</div>
+        </div>
+        <div class="content-options">
+            <button title="Create a new post"><a href="./create-post.html">Create Post</a></li></button>
+            <button title="View your drafts">Drafts</button>
+            <button title="View scheduled content">Scheduled Content</button>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Analytics Section -->
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <div class="graphs">
+                <div class="graph">
+                    <canvas id="engagement-trends"></canvas>
+                </div>
+                <div class="graph">
+                    <canvas id="revenue-breakdown"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Overview Section -->
+        <section id="content-overview">
+            <h2>Content Overview</h2>
+            <div class="upcoming-posts">
+                <h3>Upcoming Posts</h3>
+            </div>
+            <div class="current-live-stream">
+                <h3>Current Live Stream</h3>
+                <div class="live-stream-details">
+                    <p><strong>Stream Title:</strong> Engaging Content Creation Tips</p>
+                    <p><strong>Viewers:</strong> 1,250 viewers</p>
+                    <p><strong>Time Elapsed:</strong> 45 minutes</p>
+                    <p><strong>Status:</strong> <span class="live-status">Live</span></p>
+                    <a href="https://example.com/stream-link" target="_blank">View Stream</a>
+                </div>
+                <div class="live-stream-engagement">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comment</button>
+                    <button class="share-button">🔗 Share</button>
+                </div>
+            </div>            
+            <section class="recent-performance">
+                <h3>Recent Content Performance</h3>
+                <div class="performance-metrics">
+                    <div class="top-content">
+                        <h4>Top Performing Post</h4>
+                        <p><strong>Title:</strong> How to Create Engaging Content</p>
+                        <p><strong>Views:</strong> 12,345</p>
+                        <p><strong>Likes:</strong> 3,215</p>
+                        <p><strong>Comments:</strong> 215</p>
+                        <p><strong>Shares:</strong> 320</p>
+                    </div>
+            
+                    <div class="content-comparison">
+                        <h4>Content Performance Comparison</h4>
+                        <div class="chart" id="performance-comparison"></div>
+                    </div>
+            
+                    <div class="engagement-insights">
+                        <h4>Engagement Insights</h4>
+                        <p><strong>Average Watch Time:</strong> 3 minutes 45 seconds</p>
+                        <p><strong>Engagement Rate:</strong> 25%</p>
+                    </div>
+                </div>
+            </section>            
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/scripts/dashboard.js"></script>
+</body>
+</html>

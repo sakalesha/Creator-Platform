@@ -1,0 +1,27 @@
+{
+    "user": {
+      "name": "Creator Name",
+      "profile_picture": "/frontend/assets/profile-pic.jpg",
+      "greeting": "Good Morning, Creator!"
+    },
+    "metrics": {
+      "revenue": "₹5000",
+      "followers": "20k",
+      "live_streams": 2
+    },
+    "posts": [
+      {
+        "title": "Post 1",
+        "date": "2024-11-15"
+      },
+      {
+        "title": "Post 2",
+        "date": "2024-11-16"
+      }
+    ],
+    "analytics": {
+      "engagement_trends": [65, 59, 80, 81, 56, 55],
+      "revenue_breakdown": [1000, 2000, 1500, 3000]
+    }
+  }
+  
